@@ -11,6 +11,7 @@ export class AppComponent {
   public isDate: boolean = false;
   public amount: number = 0;
   public height: number = 0;
+  public miles: number = 0;
 
   constructor() {}
   onNameChange(event: any) {
@@ -29,5 +30,9 @@ export class AppComponent {
 
   onHeightChange(event: any) {
     this.height = parseFloat(event.target.value);
+  }
+
+  onMilesChange(event: any) {
+    this.miles = parseInt(event.target.value);
   }
 }
