@@ -10,6 +10,7 @@ export class AppComponent {
   public date: Date = new Date();
   public isDate: boolean = false;
   public amount: number = 0;
+  public height: number = 0;
 
   constructor() {}
   onNameChange(event: any) {
@@ -24,5 +25,9 @@ export class AppComponent {
 
   onAmountChange(event: any) {
     this.amount = parseFloat(event.target.value);
+  }
+
+  onHeightChange(event: any) {
+    this.height = parseFloat(event.target.value);
   }
 }
